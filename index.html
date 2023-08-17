@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Menú Cuadriculado</title>
+  <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos adicionales para el diseño del menú cuadriculado */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .central-menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .central-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 10px 0;
+    }
+
+    .central-button {
+      width: 150px;
+      height: 150px;
+      border-radius: 10px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .central-button:hover {
+      background-color: #0056b3;
+      color: white; /* Asegura que el texto siga siendo legible en hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="central-menu">
+    <div class="central-row">
+      <a href="pag1.html" class="central-button">
+        Pares e Impares
+      </a>
+      <a href="pagina2.html" class="central-button">
+        Página 2
+      </a>
+    </div>
+    <div class="central-row">
+      <a href="pagina3.html" class="central-button">
+        Página 3
+      </a>
+      <a href="pagina4.html" class="central-button">
+        Página 4
+      </a>
+    </div>
+  </div>
+
+  <!-- Agrega los enlaces a los archivos JavaScript de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

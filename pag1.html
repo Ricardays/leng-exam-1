@@ -33,7 +33,7 @@
 </head>
 <body>
   <div class="container mt-5">
-    <a href="pagina_principal.html" id="back-button" class="btn btn-secondary">Volver</a>
+    <a href="index.html" id="back-button" class="btn btn-secondary">Volver</a>
     <h2>Ejercicio 1: Pares e Impares</h2>
     <h5>Registre separado por una coma ","</h5>
     <br>
@@ -55,23 +55,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-    // Manejo del envío del formulario
-    $(document).ready(function () {
-      $('#formulario').submit(function (event) {
-        event.preventDefault();
-        var pares = $('#pares').val();
-        var impares = $('#impares').val();
-        var resultado = calcularResultado(pares, impares);
-        $('#resultado').val(resultado);
-      });
-
-      function calcularResultado(pares, impares) {
-        // Lógica para calcular el resultado
-        // Puedes modificar esta función según tus necesidades
-        return 'Pares: ' + pares + '\nImpares: ' + impares;
-      }
-    });
-  </script>
+  <script src="pag1.js"></script>
 </body>
 </html>

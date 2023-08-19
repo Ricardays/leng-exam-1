@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Tabla y Búsqueda</title>
+  <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+
+    body {
+      position: relative;
+    }
+    
+    #back-button {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      display: inline-block;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <a href="index.html" id="back-button" class="btn btn-secondary">Volver</a>
+    <h2>Buscar Personas</h2>
+    <form id="formulario">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" id="nombre">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" id="apellido">
+        </div>
+        <div class="col">
+          <button type="submit" class="btn btn-primary">Añadir</button>
+        </div>
+      </div>
+    </form>
+    <br/>
+    <div class="form-group mt-4">
+        <div>
+            <input type="text" class="form-control" id="buscador" placeholder="Buscar en la tabla">
+        </div>
+        <div>
+            <button type="button" class="btn btn-secondary" id="btn-search">Buscar</button>
+        </div>
+    </div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Agrega los enlaces a los archivos JavaScript de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="pag4.js"></script>
+</body>
+</html>

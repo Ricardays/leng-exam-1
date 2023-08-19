@@ -1,20 +1,3 @@
-//  // Manejo del envío del formulario
-//  $(document).ready(function () {
-//     $('#formulario').submit(function (event) {
-//       event.preventDefault();
-//       var pares = $('#pares').val();
-//       var impares = $('#impares').val();
-//       var resultado = calcularResultado(pares, impares);
-//       $('#resultado').val(resultado);
-//     });
-
-//     function calcularResultado(pares, impares) {
-//       // Lógica para calcular el resultado
-//       // Puedes modificar esta función según tus necesidades
-//       return 'Pares: ' + pares + '\nImpares: ' + impares;
-//     }
-//   });
-
 let paresInput = document.getElementById("pares");
 let imparesInput = document.getElementById("impares");
 let resultadoText = document.getElementById("resultado");

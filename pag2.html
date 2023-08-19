@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2</title>
+  <!-- Agrega los enlaces a los archivos CSS de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      position: relative;
+    }
+
+    #back-button {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      display: inline-block;
+      font-size: 16px;
+    }
+
+    #resultado {
+      width: 100%;
+      height: 150px;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f8f9fa;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <a href="index.html" id="back-button" class="btn btn-secondary">Volver</a>
+    <h2>Ejercicio 2: Encontrar caracter</h2>
+    <h5>Separar las palabras con coma ","</h5>
+    <br>
+    <form id="formulario">
+      <div class="form-group">
+        <label for="palabras">Palabras:</label>
+        <input type="text" class="form-control" id="palabras" placeholder="Ej: Gato, Juan, Tarde, Esternocleidomastoideo">
+      </div>
+      <div class="form-group">
+        <label for="caracter">Caracter:</label>
+        <input type="text" class="form-control" id="caracter" placeholder="Ej: a">
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <textarea id="resultado" readonly></textarea>
+  </div>
+
+  <!-- Agrega los enlaces a los archivos JavaScript de Bootstrap y jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="pag2.js"></script>
+</body>
+</html>
